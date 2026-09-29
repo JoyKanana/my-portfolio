@@ -41,16 +41,11 @@ git clone https://github.com/JoyKanana/my-portfolio.git
 cd my-portfolio
 ```
 
-2. Start a local server:
 
-```bash
-python3 -m http.server 8000
-```
-
-3. Open the project in your browser:
+2. Open the project in your browser:
 
 ```text
-http://localhost:8000
+ https://joykanana.github.io/my-portfolio/
 ```
 
 ## Author
