@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f7f2;
+    color: #26332e;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #176b55;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.site-header,
+.section,
+.site-footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #d7ded8;
+}
+
+.logo {
+    color: #176b55;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e08b38;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #26332e;
+}
+
+.section {
+    padding: 55px 0;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 40px;
+    min-height: 480px;
+}
+
+.eyebrow,
+.section-heading>p {
+    color: #176b55;
+    font-weight: bold;
+}
+
+.hero-copy h1 {
+    max-width: 600px;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.hero-copy h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.primary-btn,
+.secondary-btn,
+.contact-links a,
+.back-to-top {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #176b55;
+    border-radius: 5px;
+}
+
+.primary-btn {
+    background-color: #176b55;
+    color: white;
+}
+
+.secondary-btn {
+    color: #176b55;
+}
+
+.hero-visual {
+    padding: 12px;
+    border: 2px solid #e08b38;
+    background-color: #fff;
+}
+
+.image-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.section-heading {
+    margin-bottom: 24px;
+}
+
+.section-heading>p {
+    margin-bottom: 4px;
+}
+
+.section-heading h2,
+.contact-section h2 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.about-grid,
+.skills-grid,
+.hobby-grid,
+.projects-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.about-grid,
+.projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-grid,
+.hobby-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-card,
+.skill-card,
+.hobby-card,
+.project-card,
+.timeline-item {
+    padding: 20px;
+    border: 1px solid #d7ded8;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.info-card p,
+.skill-card p,
+.hobby-card p,
+.project-card p,
+.timeline-item p {
+    margin-bottom: 0;
+}
+
+.skill-number,
+.timeline-year,
+.project-number {
+    color: #176b55;
+    font-weight: bold;
+}
+
+.skill-card h3,
+.hobby-card h3,
+.project-card h3,
+.timeline-item h3 {
+    margin: 8px 0;
+}
+
+.timeline {
+    display: grid;
+    gap: 12px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+}
+
+.hobby-card span {
+    font-size: 28px;
+}
+
+.tag-list {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: 4px 10px;
+    background-color: #e8f1eb;
+    color: #176b55;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section>p {
+    max-width: 600px;
+    margin: 0 auto 16px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid #d7ded8;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+
+    .site-header,
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-section,
+    .about-grid,
+    .skills-grid,
+    .hobby-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy h1 {
+        font-size: 38px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
